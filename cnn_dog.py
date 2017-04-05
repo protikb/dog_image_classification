@@ -22,7 +22,7 @@ x = tf.placeholder(tf.float32, [None,64,64,3])
 y = tf.placeholder(tf.float32, [n_classes])
 keep_prob = tf.placeholder(tf.float32) #dropout (keep probability)00
 def keep_drop():
-    return random.uniform(0.1,0.50)
+    return random.uniform(0.4,0.50)
 def get_data():
     num_of_folder=random.randint(1,120)
     num_of_file=random.randint(0,100)
